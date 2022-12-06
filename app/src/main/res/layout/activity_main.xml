@@ -8,15 +8,18 @@
     android:background="@color/green">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="134dp"
         android:layout_height="76dp"
         android:text="Activity1"
-        android:textSize="20dp"
         android:textAlignment="center"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/changeActivity"
         app:layout_constraintEnd_toEndOf="@+id/changeActivity"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/changeActivity"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     <Button
         android:id="@+id/changeActivity"
@@ -27,5 +30,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/changeActivity"
+        app:layout_constraintEnd_toEndOf="@+id/changeActivity"
+        app:layout_constraintStart_toStartOf="@+id/changeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:hint="write something to see on next page"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
